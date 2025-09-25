@@ -1,2 +1,7 @@
-class AFP {
+class AFP (
+    val nombre: String,
+    val tasa: Double
+){
+
+
 }
