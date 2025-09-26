@@ -1,7 +1,7 @@
 import java.time.LocalDate
 
 fun main() {
-    // Inicializar datos
+
     Repositorio.inicializarDatos()
 
     var opcion: Int

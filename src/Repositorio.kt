@@ -7,7 +7,7 @@ object Repositorio {
     val empleados: List<Empleado> = _empleados
     val liquidaciones: List<LiquidacionSueldo> = _liquidaciones
 
-    // Métodos para AFP
+
     fun agregarAFP(afp: AFP) {
         _afps.add(afp)
     }
@@ -16,7 +16,7 @@ object Repositorio {
         return _afps.find { it.nombre.equals(nombre, ignoreCase = true) }
     }
 
-    // Métodos para Empleados
+
     fun agregarEmpleado(empleado: Empleado) {
         _empleados.add(empleado)
     }
@@ -39,7 +39,7 @@ object Repositorio {
         return _empleados.filter { it.afp.nombre.equals(nombreAFP, ignoreCase = true) }
     }
 
-    // Métodos para Liquidaciones
+
     fun agregarLiquidacion(liquidacion: LiquidacionSueldo) {
         _liquidaciones.add(liquidacion)
     }
@@ -48,9 +48,9 @@ object Repositorio {
         return _liquidaciones.filter { it.empleado.rut == rut }
     }
 
-    // Inicializar datos de ejemplo
+
     fun inicializarDatos() {
-        // Agregar algunas AFPs
+
         agregarAFP(AFP("Cuprum", 0.0144))
         agregarAFP(AFP("Habitat", 0.0127))
         agregarAFP(AFP("PlanVital", 0.0116))
@@ -59,12 +59,12 @@ object Repositorio {
         agregarAFP(AFP("Uno", 0.0049))
         agregarAFP(AFP("Modelo", 0.0058))
 
-        // Crear algunas direcciones
+
         val direccion1 = Direccion("Av. Siempre Viva", 742, "Springfield", "Springfield")
         val direccion2 = Direccion("Calle Falsa", 123, "Santiago", "Providencia")
         val direccion3 = Direccion("Pasaje Central", 456, "Valparaíso", "Viña del Mar")
 
-        // Crear algunos empleados
+
         val afp1 = obtenerAFP("Cuprum")!!
         val afp2 = obtenerAFP("Habitat")!!
         val afp3 = obtenerAFP("PlanVital")!!
