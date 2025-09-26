@@ -1,5 +1,5 @@
-//Integrantes: Diego Garrido Chavez, Juan Jose Garrido
 
+//Integrantes: Diego Garrido Chavez, Juan Jose Garrido
 
 
 import java.time.LocalDate
