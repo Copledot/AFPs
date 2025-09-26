@@ -69,8 +69,8 @@ object Repositorio {
         val afp2 = obtenerAFP("Habitat")!!
         val afp3 = obtenerAFP("PlanVital")!!
 
-        agregarEmpleado(Empleado("11.111.111-1", "Juan", "Perez", 1500000.0, direccion1, afp1))
-        agregarEmpleado(Empleado("22.222.222-2", "María", "Gonzalez", 1800000.0, direccion2, afp2))
-        agregarEmpleado(Empleado("33.333.333-3", "Carlos", "Rodriguez", 2000000.0, direccion3, afp3))
+        agregarEmpleado(Empleado("11.111.111-1", "Juan", "Perez", 1500000, direccion1, afp1))
+        agregarEmpleado(Empleado("22.222.222-2", "María", "Gonzalez", 1800000, direccion2, afp2))
+        agregarEmpleado(Empleado("33.333.333-3", "Carlos", "Rodriguez", 2000000, direccion3, afp3))
     }
 }
