@@ -1,3 +1,3 @@
 Integrantes:
-Diego Garrido Chávez
+Diego Garrido Chávez \n
 Juan José Garrido
